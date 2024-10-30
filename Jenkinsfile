@@ -11,7 +11,7 @@ node {
 
     stage('Run image') {
         // Run the Docker container
-        sh 'docker run -d -p 80:80 --name nginx_container babba/nginx'
+        sh 'docker run -d -p 80:80 --name babba/nginx'
         
         // Add a delay to allow Nginx to fully start
         sh 'sleep 5'
